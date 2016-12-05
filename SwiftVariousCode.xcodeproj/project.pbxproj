@@ -390,6 +390,7 @@
 				9ADB6ACC1DF54C1500DB5F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9ADB6ACD1DF54C1500DB5F08 /* Build configuration list for PBXNativeTarget "SwiftVariousCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +399,7 @@
 				9ADB6ACF1DF54C1500DB5F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
