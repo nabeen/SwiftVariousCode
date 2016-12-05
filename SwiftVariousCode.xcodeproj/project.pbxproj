@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9A84BE241DF580D700E85863 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84BE231DF580D700E85863 /* LabelViewController.swift */; };
+		9A84BE261DF5872500E85863 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84BE251DF5872500E85863 /* ButtonViewController.swift */; };
 		9ADB6AB11DF54C1400DB5F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB6AB01DF54C1400DB5F08 /* AppDelegate.swift */; };
 		9ADB6AB31DF54C1400DB5F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB6AB21DF54C1400DB5F08 /* ViewController.swift */; };
 		9ADB6AB61DF54C1400DB5F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADB6AB41DF54C1400DB5F08 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		9A84BE231DF580D700E85863 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		9A84BE251DF5872500E85863 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		9ADB6AAD1DF54C1400DB5F08 /* SwiftVariousCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVariousCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADB6AB01DF54C1400DB5F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ADB6AB21DF54C1400DB5F08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				9ADB6AB01DF54C1400DB5F08 /* AppDelegate.swift */,
 				9ADB6AB21DF54C1400DB5F08 /* ViewController.swift */,
+				9A84BE251DF5872500E85863 /* ButtonViewController.swift */,
 				9A84BE231DF580D700E85863 /* LabelViewController.swift */,
 				9ADB6AD21DF571BE00DB5F08 /* OutletViewController.swift */,
 				9ADB6AB41DF54C1400DB5F08 /* Main.storyboard */,
@@ -206,6 +209,7 @@
 				9ADB6AD31DF571BE00DB5F08 /* OutletViewController.swift in Sources */,
 				9ADB6AB31DF54C1400DB5F08 /* ViewController.swift in Sources */,
 				9ADB6AB11DF54C1400DB5F08 /* AppDelegate.swift in Sources */,
+				9A84BE261DF5872500E85863 /* ButtonViewController.swift in Sources */,
 				9A84BE241DF580D700E85863 /* LabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

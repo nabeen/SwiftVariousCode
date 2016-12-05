@@ -46,11 +46,20 @@
                                     <segue destination="m0Z-VY-JkV" kind="show" id="4A8-6o-giz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJH-ak-XD5">
+                                <rect key="frame" x="20" y="224" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="CBb-BW-g51" kind="show" id="DuZ-G9-HWK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Nbj-rV-G7I" firstAttribute="leading" secondItem="X4c-KU-OzS" secondAttribute="leading" id="2i1-6P-Vbz"/>
+                            <constraint firstItem="eJH-ak-XD5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Rs-Jh-SHw"/>
                             <constraint firstItem="7VR-uz-xy6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HBy-fG-BGN"/>
+                            <constraint firstItem="eJH-ak-XD5" firstAttribute="top" secondItem="j3a-bs-z11" secondAttribute="bottom" constant="8" id="Hws-iq-hoc"/>
                             <constraint firstItem="X4c-KU-OzS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O3f-fO-JNB"/>
                             <constraint firstItem="Nbj-rV-G7I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="cRX-F8-pGF"/>
                             <constraint firstItem="X4c-KU-OzS" firstAttribute="top" secondItem="Nbj-rV-G7I" secondAttribute="bottom" constant="8" id="nVw-fp-hVu"/>
@@ -225,6 +234,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUd-rO-xa7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2014" y="1832"/>
+        </scene>
+        <!--Button-->
+        <scene sceneID="uyV-eD-wr2">
+            <objects>
+                <viewController id="CBb-BW-g51" customClass="ButtonViewController" customModule="SwiftVariousCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ku-qC-BXW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sqw-vR-5fk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Njy-Qh-w0O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGq-qQ-4nO">
+                                <rect key="frame" x="20" y="72" width="57" height="30"/>
+                                <state key="normal" title="Random"/>
+                                <connections>
+                                    <action selector="pushRandom:" destination="CBb-BW-g51" eventType="touchUpInside" id="wYt-fO-8Xm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgR-Wa-Kmg">
+                                <rect key="frame" x="85" y="76" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr8-Da-wsp">
+                                <rect key="frame" x="20" y="110" width="21" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="YDg-ZG-WtB"/>
+                                </constraints>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="pushOk:" destination="CBb-BW-g51" eventType="touchUpInside" id="4X7-6i-xJR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mGq-qQ-4nO" firstAttribute="leading" secondItem="Njy-Qh-w0O" secondAttribute="leadingMargin" id="KHM-bS-NRQ"/>
+                            <constraint firstItem="vr8-Da-wsp" firstAttribute="leading" secondItem="mGq-qQ-4nO" secondAttribute="leading" id="Qg8-VQ-Ilu"/>
+                            <constraint firstItem="mGq-qQ-4nO" firstAttribute="top" secondItem="0ku-qC-BXW" secondAttribute="bottom" constant="8" id="nDB-BJ-3ja"/>
+                            <constraint firstItem="vr8-Da-wsp" firstAttribute="top" secondItem="mGq-qQ-4nO" secondAttribute="bottom" constant="8" symbolic="YES" id="y0R-wP-IoV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Button" id="yzo-r4-gAv"/>
+                    <connections>
+                        <outlet property="myButton" destination="vr8-Da-wsp" id="7fd-rd-U1i"/>
+                        <outlet property="myLabel" destination="WgR-Wa-Kmg" id="Y8F-1v-tzJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9H-8a-d70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="3195"/>
         </scene>
         <!--Label-->
         <scene sceneID="Mup-Lf-IQb">
