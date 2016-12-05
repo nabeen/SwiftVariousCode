@@ -18,15 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbj-rV-G7I">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbj-rV-G7I">
                                 <rect key="frame" x="20" y="72" width="72" height="30"/>
                                 <state key="normal" title="Constraint"/>
                                 <connections>
                                     <segue destination="QF0-j0-wsq" kind="show" id="Raq-UL-2q4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4c-KU-OzS">
+                                <rect key="frame" x="20" y="110" width="42" height="30"/>
+                                <state key="normal" title="Image"/>
+                                <connections>
+                                    <segue destination="Gec-ZQ-yL9" kind="show" id="k47-av-o70"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nbj-rV-G7I" firstAttribute="leading" secondItem="X4c-KU-OzS" secondAttribute="leading" id="2i1-6P-Vbz"/>
+                            <constraint firstItem="X4c-KU-OzS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O3f-fO-JNB"/>
+                            <constraint firstItem="Nbj-rV-G7I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="cRX-F8-pGF"/>
+                            <constraint firstItem="X4c-KU-OzS" firstAttribute="top" secondItem="Nbj-rV-G7I" secondAttribute="bottom" constant="8" id="nVw-fp-hVu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="dashboard" id="OKv-S4-CJ1"/>
                 </viewController>
@@ -113,6 +126,36 @@
             </objects>
             <point key="canvasLocation" x="2014" y="357"/>
         </scene>
+        <!--Image-->
+        <scene sceneID="PMr-9R-UUO">
+            <objects>
+                <viewController id="Gec-ZQ-yL9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bqz-xg-wut"/>
+                        <viewControllerLayoutGuide type="bottom" id="sUu-ro-yiD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uo9-Na-mQk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="yEt-M0-Ywf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yEt-M0-Ywf" firstAttribute="top" secondItem="uo9-Na-mQk" secondAttribute="topMargin" id="05q-oV-gvb"/>
+                            <constraint firstItem="yEt-M0-Ywf" firstAttribute="leading" secondItem="uo9-Na-mQk" secondAttribute="leadingMargin" constant="-20" id="2pP-Pr-1Os"/>
+                            <constraint firstItem="sUu-ro-yiD" firstAttribute="top" secondItem="yEt-M0-Ywf" secondAttribute="bottom" id="2rq-5D-9pz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yEt-M0-Ywf" secondAttribute="trailing" constant="-20" id="pUT-Zr-LBT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image" id="6LE-C5-FKL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWz-CD-iY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="1140"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="KDN-SL-VhH">
             <objects>
@@ -132,4 +175,7 @@
             <point key="canvasLocation" x="401" y="357"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wall" width="5120" height="2880"/>
+    </resources>
 </document>
