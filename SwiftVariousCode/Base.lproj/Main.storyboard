@@ -39,6 +39,13 @@
                                     <segue destination="t4k-Iw-r1T" kind="show" id="na7-8d-GfV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3a-bs-z11">
+                                <rect key="frame" x="20" y="186" width="38" height="30"/>
+                                <state key="normal" title="Label"/>
+                                <connections>
+                                    <segue destination="m0Z-VY-JkV" kind="show" id="4A8-6o-giz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -47,7 +54,9 @@
                             <constraint firstItem="X4c-KU-OzS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O3f-fO-JNB"/>
                             <constraint firstItem="Nbj-rV-G7I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="cRX-F8-pGF"/>
                             <constraint firstItem="X4c-KU-OzS" firstAttribute="top" secondItem="Nbj-rV-G7I" secondAttribute="bottom" constant="8" id="nVw-fp-hVu"/>
+                            <constraint firstItem="j3a-bs-z11" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ome-ta-x9x"/>
                             <constraint firstItem="7VR-uz-xy6" firstAttribute="top" secondItem="X4c-KU-OzS" secondAttribute="bottom" constant="8" id="vI8-x5-5NY"/>
+                            <constraint firstItem="j3a-bs-z11" firstAttribute="top" secondItem="7VR-uz-xy6" secondAttribute="bottom" constant="8" id="wZe-ze-FhX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="dashboard" id="OKv-S4-CJ1"/>
@@ -216,6 +225,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUd-rO-xa7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2014" y="1832"/>
+        </scene>
+        <!--Label-->
+        <scene sceneID="Mup-Lf-IQb">
+            <objects>
+                <viewController id="m0Z-VY-JkV" customClass="LabelViewController" customModule="SwiftVariousCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xng-jx-iW0"/>
+                        <viewControllerLayoutGuide type="bottom" id="2tQ-D0-Eaq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AIc-gm-of8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Label" id="SUP-Wm-lea"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQk-j2-8OR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="2521"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KDN-SL-VhH">
