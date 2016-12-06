@@ -23,11 +23,11 @@ class OutletViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func sayFizz(sender: AnyObject) {
+    @IBAction func sayFizz(_ sender: AnyObject) {
         myLabel.text = "Fizz"
     }
 
-    @IBAction func sayBuzz(sender: AnyObject) {
+    @IBAction func sayBuzz(_ sender: AnyObject) {
         myLabel.text = "Buzz"
     }
 }

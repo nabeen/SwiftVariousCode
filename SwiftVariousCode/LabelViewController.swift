@@ -18,8 +18,8 @@ class LabelViewController: UIViewController {
         myLabel.text = "Label from code"
         myLabel.frame = CGRect(x:50, y:100, width:200, height:21)
         
-        myLabel.textColor = UIColor.blackColor()
-        myLabel.backgroundColor = UIColor.lightGrayColor()
+        myLabel.textColor = UIColor.black
+        myLabel.backgroundColor = UIColor.lightGray
         
         view.addSubview(myLabel)
     }

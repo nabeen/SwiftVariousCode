@@ -18,7 +18,7 @@ class ButtonViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         myLabel.text = String(0)
-        myButton.enabled = false
+        myButton.isEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,14 +27,14 @@ class ButtonViewController: UIViewController {
     }
 
 
-    @IBAction func pushRandom(sender: AnyObject) {
+    @IBAction func pushRandom(_ sender: AnyObject) {
         let num = arc4random_uniform(100)
         myLabel.text = String(num)
         
-        myButton.enabled = (num >= 50)
+        myButton.isEnabled = (num >= 50)
     }
     
-    @IBAction func pushOk(sender: AnyObject) {
+    @IBAction func pushOk(_ sender: AnyObject) {
         print("push ok")
     }
     
